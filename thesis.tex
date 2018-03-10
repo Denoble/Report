@@ -1,0 +1,62 @@
+\documentclass[dvips,letterpaper,12pt]{report}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{thesis}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\lstset {
+     frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red} % string color
+}
+\begin{document}
+
+\pagenumbering{roman}
+
+% Fill in the title, author, degree name, department, and month/year.
+% Upon completion, this should look like the following:
+%\thesistitle
+%\title{Strengthening Capsicum Capabilities with Libpreopen}
+%	{John P. Doe}
+%	{Master of Science}
+%	{Department of Computer Science}
+%	{May 2009}
+% The \thesistitle definition is in thesis.sty.  Other customizations
+% can be made there.
+\thesistitle
+	{
+	  Strengthening Capsicum Capabilities with Libpreopen \\
+	 \footnotesize{\sl}}
+	{\emph{Stanley Uche Godfrey} }
+	{Master of \emph{Science} }
+	{Department of \emph{Scientific Computing}}
+	{\emph{March 2018} }
+
+\include{abstract}
+\include{ack}
+\include{contents}
+\include{tables}
+\include{figures}
+
+\pagenumbering{arabic}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+\include{chap5}
+\include{chap6}
+
+\include{bib}
+
+% If you have no appendices, remove the following two lines.
+% If you have more appdences, add them as necessary.
+\appendix
+\include{apdxa}
+
+\end{document}
